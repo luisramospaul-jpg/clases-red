@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase E | Clases de Red IPv4</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="pagina-clase pagina-clase-e">
+
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-diagram-3-fill me-2"></i>IPv4<span class="brand-accent">Classes</span>
+      </a>
+      <div class="ms-auto">
+        <a href="index.html" class="btn btn-nav-outline">
+          <i class="bi bi-house-door-fill me-2"></i>Inicio
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-clase text-center">
+    <div class="hero-clase-overlay"></div>
+    <div class="container py-5 position-relative">
+      <span class="badge-clase mb-3 d-inline-block">Clase E · 240 – 255</span>
+      <h1 class="display-3 fw-bold mb-2">
+        <i class="bi bi-5-circle-fill me-2"></i>Clase E
+      </h1>
+      <p class="lead mb-0">Redes experimentales · Sin máscara por defecto</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+
+    <section class="row g-4 mb-5">
+      <div class="col-lg-6">
+        <div class="info-card p-4 p-md-5 h-100">
+          <h2 class="h4 mb-3"><i class="bi bi-clipboard-data-fill me-2 text-gold"></i>Datos técnicos</h2>
+          <ul class="list-unstyled mb-0 lista-tecnica">
+            <li><i class="bi bi-check-circle-fill me-2"></i><strong>Rango primer octeto:</strong> 240 – 255</li>
+            <li><i class="bi bi-check-circle-fill me-2"></i><strong>Bits iniciales:</strong> 1111</li>
+            <li><i class="bi bi-check-circle-fill me-2"></i><strong>Máscara por defecto:</strong> No aplica</li>
+            <li><i class="bi bi-check-circle-fill me-2"></i><strong>Redes posibles:</strong> No aplica</li>
+            <li><i class="bi bi-check-circle-fill me-2"></i><strong>Hosts por red:</strong> No aplica</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="info-card p-4 p-md-5 h-100">
+          <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+            <h2 class="h4 mb-0"><i class="bi bi-lightbulb-fill me-2 text-gold"></i>Uso y características</h2>
+            <span class="badge-clase-info badge-e">Redes experimentales</span>
+          </div>
+          <p>
+            La <strong>Clase E</strong> está reservada para uso experimental e investigación.
+            No se utiliza en internet público y no se asigna a hosts finales.
+          </p>
+          <p class="mb-0">
+            Su propósito es permitir pruebas de nuevos protocolos o arquitecturas sin afectar
+            el tráfico real de la red.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="section-title">
+        <span class="section-line"></span>
+        <h2>Galería — Clase E</h2>
+        <span class="section-line"></span>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="galeria-item">
+            <img src="img/e-1.avif" alt="Esquema general">
+            <div class="galeria-caption">Ingenieros</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="galeria-item">
+            <img src="img/e-2.avif" alt="Ejemplo de investigación">
+            <div class="galeria-caption">Cientificos de la computación</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="galeria-item">
+            <img src="img/e-3.avif" alt="Aplicación práctica">
+            <div class="galeria-caption">Laboratorios de investigación</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="d-flex flex-wrap justify-content-between gap-3 mt-5">
+      <a href="clase-d.html" class="btn btn-nav-clase">
+        <i class="bi bi-arrow-left me-2"></i>Clase D
+      </a>
+      <a href="index.html" class="btn btn-nav-clase btn-nav-central">
+        <i class="bi bi-house-door-fill me-2"></i>Inicio
+      </a>
+      <a href="clase-a.html" class="btn btn-nav-clase">
+        Clase A<i class="bi bi-arrow-right ms-2"></i>
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="footer-custom py-5 mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <h5 class="mb-1"><i class="bi bi-diagram-3-fill me-2 text-gold"></i>Clases de Red IPv4</h5>
+          <div class="footer-sources mt-2">
+            <span class="source-label">Fuentes:</span>
+            <a href="https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xhtml" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-box-arrow-up-right me-1"></i>IANA - IPv4 Address Space
+            </a>
+            <span class="source-sep">·</span>
+            <a href="https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-box-arrow-up-right me-1"></i>Cisco - IP Addressing
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <span class="footer-tag">Guía Interactiva</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

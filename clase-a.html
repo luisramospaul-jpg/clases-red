@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase A | Clases de Red IPv4</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="pagina-clase pagina-clase-a">
+
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-diagram-3-fill me-2"></i>IPv4<span class="brand-accent">Classes</span>
+      </a>
+      <div class="ms-auto">
+        <a href="index.html" class="btn btn-nav-outline">
+          <i class="bi bi-house-door-fill me-2"></i>Inicio
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-clase text-center">
+    <div class="hero-clase-overlay"></div>
+    <div class="container py-5 position-relative">
+      <span class="badge-clase mb-3 d-inline-block">Clase A · 1 – 126</span>
+      <h1 class="display-3 fw-bold mb-2">
+        <i class="bi bi-1-circle-fill me-2"></i>Clase A
+      </h1>
+      <p class="lead mb-0">Redes de gran escala · Máscara 255.0.0.0 (/8)</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+
+    <section class="row g-4 mb-5">
+      <div class="col-lg-6">
+        <div class="info-card p-4 p-md-5 h-100">
+          <h2 class="h4 mb-3"><i class="bi bi-clipboard-data-fill me-2 text-gold"></i>Datos técnicos</h2>
+          <ul class="list-unstyled mb-0 lista-tecnica">
+            <li><i class="bi bi-check-circle-fill me-2"></i><strong>Rango primer octeto:</strong> 1 – 126</li>
+            <li><i class="bi bi-check-circle-fill me-2"></i><strong>Bit inicial:</strong> 0</li>
+            <li><i class="bi bi-check-circle-fill me-2"></i><strong>Máscara por defecto:</strong> 255.0.0.0 (/8)</li>
+            <li><i class="bi bi-check-circle-fill me-2"></i><strong>Redes posibles:</strong> 126</li>
+            <li><i class="bi bi-check-circle-fill me-2"></i><strong>Hosts por red:</strong> hasta 16.777.214</li>
+            <li><i class="bi bi-check-circle-fill me-2"></i><strong>Rango privado:</strong> <code>10.0.0.0 – 10.255.255.255</code></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="info-card p-4 p-md-5 h-100">
+          <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+            <h2 class="h4 mb-0"><i class="bi bi-lightbulb-fill me-2 text-gold"></i>Uso y características</h2>
+            <span class="badge-clase-info badge-a">Redes de gran escala</span>
+          </div>
+          <p>
+            La <strong>Clase A</strong> está diseñada para redes muy grandes, con millones de hosts.
+            Es la clase que permite la mayor cantidad de hosts por red y suele reservarse para
+            <strong>gobiernos y grandes empresas</strong>.
+          </p>
+          <p class="mb-0">
+            Solo el primer octeto identifica la red; los tres octetos restantes quedan disponibles
+            para asignar hosts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="section-title">
+        <span class="section-line"></span>
+        <h2>Galería — Clase A</h2>
+        <span class="section-line"></span>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="galeria-item">
+            <img src="img/a-1.avif" alt="Empresa de Apple">
+            <div class="galeria-caption">Empresa de Apple</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="galeria-item">
+            <img src="img/a-2.avif" alt="Microsoft">
+            <div class="galeria-caption">Microsoft</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="galeria-item">
+            <img src="img/a-3.avif" alt="Empresa tecnologica Nvidia">
+            <div class="galeria-caption">Empresa tecnologica Nvidia</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="d-flex flex-wrap justify-content-between gap-3 mt-5">
+      <a href="clase-e.html" class="btn btn-nav-clase">
+        <i class="bi bi-arrow-left me-2"></i>Clase E
+      </a>
+      <a href="index.html" class="btn btn-nav-clase btn-nav-central">
+        <i class="bi bi-house-door-fill me-2"></i>Inicio
+      </a>
+      <a href="clase-b.html" class="btn btn-nav-clase">
+        Clase B<i class="bi bi-arrow-right ms-2"></i>
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="footer-custom py-5 mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <h5 class="mb-1"><i class="bi bi-diagram-3-fill me-2 text-gold"></i>Clases de Red IPv4</h5>
+          <div class="footer-sources mt-2">
+            <span class="source-label">Fuentes:</span>
+            <a href="https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xhtml" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-box-arrow-up-right me-1"></i>IANA - IPv4 Address Space
+            </a>
+            <span class="source-sep">·</span>
+            <a href="https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-box-arrow-up-right me-1"></i>Cisco - IP Addressing
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <span class="footer-tag">Guía Interactiva</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
