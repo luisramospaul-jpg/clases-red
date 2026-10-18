@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradClean" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0314" />
+      <stop offset="50%" stop-color="#16082B" />
+      <stop offset="100%" stop-color="#080210" />
+    </linearGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="cardGradLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2E1065" />
+      <stop offset="100%" stop-color="#110524" />
+    </linearGradient>
+
+    <linearGradient id="cardGradRight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B0764" />
+      <stop offset="100%" stop-color="#110524" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="675" fill="url(#bgGradClean)" />
+
+  <!-- Clean Grid Lines -->
+  <g stroke="#4C1D95" stroke-width="1" stroke-opacity="0.2">
+    <line x1="0" y1="112" x2="1200" y2="112" />
+    <line x1="0" y1="225" x2="1200" y2="225" />
+    <line x1="0" y1="337" x2="1200" y2="337" />
+    <line x1="0" y1="450" x2="1200" y2="450" />
+    <line x1="0" y1="562" x2="1200" y2="562" />
+    <line x1="200" y1="0" x2="200" y2="675" />
+    <line x1="400" y1="0" x2="400" y2="675" />
+    <line x1="600" y1="0" x2="600" y2="675" />
+    <line x1="800" y1="0" x2="800" y2="675" />
+    <line x1="1000" y1="0" x2="1000" y2="675" />
+  </g>
+
+  <!-- HEADER -->
+  <g transform="translate(600, 65)" text-anchor="middle">
+    <rect x="-210" y="-28" width="420" height="36" rx="18" fill="#1E1B4B" stroke="#818CF8" stroke-width="1.5" />
+    <text y="-6" fill="#A5B4FC" font-family="sans-serif" font-size="13" font-weight="bold" letter-spacing="2">DIAGRAMA TÉCNICO OFICIAL</text>
+    <text y="52" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="900">REDES IPV4 — CLASE B</text>
+  </g>
+
+  <!-- MAIN BIT ARRAY CONTAINER (32 BITS) -->
+  <g transform="translate(100, 160)">
+    <rect x="0" y="0" width="1000" height="75" rx="10" fill="#0F172A" stroke="#6D28D9" stroke-width="2" />
+    
+    <!-- Bit 1 (Fixed 1) -->
+    <rect x="20" y="15" width="22" height="45" rx="4" fill="#F59E0B" stroke="#FBBF24" stroke-width="1" />
+    <text x="31" y="44" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">1</text>
+    
+    <!-- Bit 2 (Fixed 0) -->
+    <rect x="45" y="15" width="22" height="45" rx="4" fill="#A78BFA" stroke="#DDD6FE" stroke-width="1" />
+    <text x="56" y="44" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">0</text>
+
+    <!-- Remaining Network Bits (14 bits) -->
+    <g fill="#4C1D95" stroke="#7C3AED" stroke-width="0.8">
+      <rect x="75" y="15" width="19" height="45" rx="3" /><rect x="97" y="15" width="19" height="45" rx="3" />
+      <rect x="119" y="15" width="19" height="45" rx="3" /><rect x="141" y="15" width="19" height="45" rx="3" />
+      <rect x="163" y="15" width="19" height="45" rx="3" /><rect x="185" y="15" width="19" height="45" rx="3" />
+      
+      <rect x="215" y="15" width="19" height="45" rx="3" /><rect x="237" y="15" width="19" height="45" rx="3" />
+      <rect x="259" y="15" width="19" height="45" rx="3" /><rect x="281" y="15" width="19" height="45" rx="3" />
+      <rect x="303" y="15" width="19" height="45" rx="3" /><rect x="325" y="15" width="19" height="45" rx="3" />
+      <rect x="347" y="15" width="19" height="45" rx="3" /><rect x="369" y="15" width="19" height="45" rx="3" />
+    </g>
+
+    <!-- Separation Line / Divider -->
+    <line x1="400" y1="10" x2="400" y2="65" stroke="#F43F5E" stroke-width="3" stroke-dasharray="4" />
+
+    <!-- Host Bits (16 bits) -->
+    <g fill="#1E1B4B" stroke="#4338CA" stroke-width="0.8">
+      <rect x="420" y="15" width="22" height="45" rx="3" /><rect x="445" y="15" width="22" height="45" rx="3" />
+      <rect x="470" y="15" width="22" height="45" rx="3" /><rect x="495" y="15" width="22" height="45" rx="3" />
+      <rect x="520" y="15" width="22" height="45" rx="3" /><rect x="545" y="15" width="22" height="45" rx="3" />
+      <rect x="570" y="15" width="22" height="45" rx="3" /><rect x="595" y="15" width="22" height="45" rx="3" />
+      
+      <rect x="640" y="15" width="22" height="45" rx="3" /><rect x="665" y="15" width="22" height="45" rx="3" />
+      <rect x="690" y="15" width="22" height="45" rx="3" /><rect x="715" y="15" width="22" height="45" rx="3" />
+      <rect x="740" y="15" width="22" height="45" rx="3" /><rect x="765" y="15" width="22" height="45" rx="3" />
+      <rect x="790" y="15" width="22" height="45" rx="3" /><rect x="815" y="15" width="22" height="45" rx="3" />
+    </g>
+  </g>
+
+  <!-- CONTENT PANELS -->
+  
+  <!-- LEFT PANEL: NETWORK ID -->
+  <g transform="translate(100, 260)">
+    <rect x="0" y="0" width="310" height="360" rx="14" fill="url(#cardGradLeft)" stroke="#7C3AED" stroke-width="2" />
+    
+    <text x="155" y="35" fill="#DDD6FE" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">IDENTIFICADOR DE RED</text>
+    <text x="155" y="55" fill="#A78BFA" font-family="sans-serif" font-size="12" text-anchor="middle">2 Octetos (16 Bits)</text>
+
+    <!-- Fixed Bits Box -->
+    <rect x="25" y="75" width="260" height="50" rx="8" fill="#130728" stroke="#8B5CF6" stroke-width="1.5" />
+    <text x="40" y="105" fill="#FDE047" font-family="sans-serif" font-size="13" font-weight="bold">Bits Fijos:</text>
+    
+    <g transform="translate(160, 83)">
+      <rect x="0" y="2" width="24" height="28" rx="4" fill="#F59E0B" stroke="#FBBF24" />
+      <text x="12" y="21" fill="#FFFFFF" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle">1</text>
+      
+      <rect x="30" y="2" width="24" height="28" rx="4" fill="#A78BFA" stroke="#DDD6FE" />
+      <text x="42" y="21" fill="#FFFFFF" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle">0</text>
+    </g>
+
+    <!-- Icon / Visual representation -->
+    <circle cx="155" cy="220" r="40" fill="#2E1065" stroke="#A78BFA" stroke-width="2" />
+    <path d="M 140 220 L 170 220 M 155 205 L 155 235" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+
+    <text x="155" y="295" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Redes Medianas / Universidades</text>
+    <text x="155" y="318" fill="#C4B5FD" font-family="monospace" font-size="12" text-anchor="middle">Rango: 172.16.x.x</text>
+  </g>
+
+  <!-- RIGHT PANEL: HOST ID -->
+  <g transform="translate(435, 260)">
+    <rect x="0" y="0" width="665" height="360" rx="14" fill="url(#cardGradRight)" stroke="#8B5CF6" stroke-width="2" />
+
+    <text x="332" y="35" fill="#DDD6FE" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">IDENTIFICADOR DE HOST (EQUIPOS INTERNOS)</text>
+    <text x="332" y="55" fill="#A78BFA" font-family="sans-serif" font-size="12" text-anchor="middle">2 Octetos Libres (16 Bits) — Hasta 65,534 dispositivos</text>
+
+    <!-- Subnet Topology Box -->
+    <rect x="200" y="75" width="265" height="40" rx="6" fill="#2E1065" stroke="#A78BFA" stroke-width="1.5" />
+    <text x="332" y="100" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">ROUTER / GATEWAY PRINCIPAL</text>
+
+    <!-- Connecting lines -->
+    <path d="M 332 115 L 332 155 M 130 155 L 535 155 M 130 155 L 130 185 M 332 155 L 332 185 M 535 155 L 535 185" stroke="#C4B5FD" stroke-width="2" fill="none" />
+
+    <!-- Sub-blocks / Devices -->
+    <!-- Block 1 -->
+    <g transform="translate(55, 185)">
+      <rect x="0" y="0" width="150" height="135" rx="8" fill="#1E1B4B" stroke="#7C3AED" stroke-width="1.5" />
+      <text x="75" y="25" fill="#DDD6FE" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Laboratorios</text>
+      <circle cx="50" cy="65" r="10" fill="#A78BFA" />
+      <circle cx="75" cy="65" r="10" fill="#A78BFA" />
+      <circle cx="100" cy="65" r="10" fill="#A78BFA" />
+      <text x="75" y="105" fill="#C4B5FD" font-family="sans-serif" font-size="11" text-anchor="middle">PCs Estudiantes</text>
+    </g>
+
+    <!-- Block 2 -->
+    <g transform="translate(257, 185)">
+      <rect x="0" y="0" width="150" height="135" rx="8" fill="#1E1B4B" stroke="#7C3AED" stroke-width="1.5" />
+      <text x="75" y="25" fill="#DDD6FE" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Servidores Web</text>
+      <rect x="45" y="55" width="20" height="20" fill="#A78BFA" rx="3" />
+      <rect x="85" y="55" width="20" height="20" fill="#A78BFA" rx="3" />
+      <text x="75" y="105" fill="#C4B5FD" font-family="sans-serif" font-size="11" text-anchor="middle">Hosting / Apps</text>
+    </g>
+
+    <!-- Block 3 -->
+    <g transform="translate(460, 185)">
+      <rect x="0" y="0" width="150" height="135" rx="8" fill="#1E1B4B" stroke="#7C3AED" stroke-width="1.5" />
+      <text x="75" y="25" fill="#DDD6FE" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Administración</text>
+      <path d="M 65 65 L 75 50 L 85 65 Z" fill="#A78BFA" />
+      <text x="75" y="105" fill="#C4B5FD" font-family="sans-serif" font-size="11" text-anchor="middle">Oficinas / IP Fijas</text>
+    </g>
+  </g>
+
+</svg>

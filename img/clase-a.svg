@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B19" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#080D1A" />
+    </linearGradient>
+
+    <linearGradient id="netCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="hostCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="glowLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#4FACFE" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="675" fill="url(#bgGradient)" />
+
+  <!-- Tech Grid Lines -->
+  <g stroke="#1E293B" stroke-width="1" stroke-opacity="0.4">
+    <path d="M 0,75 L 1200,75 M 0,150 L 1200,150 M 0,225 L 1200,225 M 0,300 L 1200,300 M 0,375 L 1200,375 M 0,450 L 1200,450 M 0,525 L 1200,525 M 0,600 L 1200,600" />
+    <path d="M 150,0 L 150,675 M 300,0 L 300,675 M 450,0 L 450,675 M 600,0 L 600,675 M 750,0 L 750,675 M 900,0 L 900,675 M 1050,0 L 1050,675" />
+  </g>
+
+  <!-- MAIN TITLE (Portada) -->
+  <g transform="translate(600, 75)" text-anchor="middle">
+    <rect x="-220" y="-30" width="440" height="40" rx="20" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.5" />
+    <text y="-4" fill="#38BDF8" font-family="&#39;Segoe UI&#39;, Roboto, sans-serif" font-size="14" font-weight="800" letter-spacing="3">PORTADA TÉCNICA DE REDES</text>
+    <text y="50" fill="#FFFFFF" font-family="&#39;Segoe UI&#39;, Roboto, sans-serif" font-size="36" font-weight="900" letter-spacing="1">ESTRUCTURA INTERNA: CLASE A</text>
+  </g>
+
+  <!-- BIT ARRAY STREAM (32 BITS) -->
+  <g transform="translate(100, 175)">
+    <!-- Main Bracket Container -->
+    <rect x="0" y="0" width="1000" height="70" rx="12" fill="#090D16" stroke="#334155" stroke-width="2" />
+    
+    <!-- 32 Bits Visualization (First bit '0' highlighted) -->
+    <!-- Bit 1 (Fixed 0) -->
+    <rect x="15" y="15" width="26" height="40" rx="4" fill="#3B82F6" stroke="#60A5FA" stroke-width="2" filter="url(#neonGlow)" />
+    <text x="28" y="42" fill="#FFFFFF" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle">0</text>
+    
+    <!-- Remaining 7 Bits Network -->
+    <g fill="#1E3A8A" stroke="#3B82F6" stroke-width="1">
+      <rect x="45" y="15" width="22" height="40" rx="4" />
+      <rect x="71" y="15" width="22" height="40" rx="4" />
+      <rect x="97" y="15" width="22" height="40" rx="4" />
+      <rect x="123" y="15" width="22" height="40" rx="4" />
+      <rect x="149" y="15" width="22" height="40" rx="4" />
+      <rect x="175" y="15" width="22" height="40" rx="4" />
+      <rect x="201" y="15" width="22" height="40" rx="4" />
+    </g>
+
+    <!-- Divider Line -->
+    <line x1="238" y1="10" x2="238" y2="60" stroke="#00F2FE" stroke-width="3" stroke-dasharray="4" />
+
+    <!-- 24 Bits Host -->
+    <g fill="#064E3B" stroke="#10B981" stroke-width="1" opacity="0.8">
+      <!-- 2nd Octet -->
+      <rect x="250" y="15" width="22" height="40" rx="4" /><rect x="276" y="15" width="22" height="40" rx="4" /><rect x="302" y="15" width="22" height="40" rx="4" /><rect x="328" y="15" width="22" height="40" rx="4" /><rect x="354" y="15" width="22" height="40" rx="4" /><rect x="380" y="15" width="22" height="40" rx="4" /><rect x="406" y="15" width="22" height="40" rx="4" /><rect x="432" y="15" width="22" height="40" rx="4" />
+      <!-- 3rd Octet -->
+      <rect x="500" y="15" width="22" height="40" rx="4" /><rect x="526" y="15" width="22" height="40" rx="4" /><rect x="552" y="15" width="22" height="40" rx="4" /><rect x="578" y="15" width="22" height="40" rx="4" /><rect x="604" y="15" width="22" height="40" rx="4" /><rect x="630" y="15" width="22" height="40" rx="4" /><rect x="656" y="15" width="22" height="40" rx="4" /><rect x="682" y="15" width="22" height="40" rx="4" />
+      <!-- 4th Octet -->
+      <rect x="750" y="15" width="22" height="40" rx="4" /><rect x="776" y="15" width="22" height="40" rx="4" /><rect x="802" y="15" width="22" height="40" rx="4" /><rect x="828" y="15" width="22" height="40" rx="4" /><rect x="854" y="15" width="22" height="40" rx="4" /><rect x="880" y="15" width="22" height="40" rx="4" /><rect x="906" y="15" width="22" height="40" rx="4" /><rect x="932" y="15" width="22" height="40" rx="4" />
+    </g>
+  </g>
+
+  <!-- INTERNAL ARCHITECTURE (2 MAIN DIVISIONS) -->
+  
+  <!-- LEFT PANEL: NETWORK ID ARCHITECTURE -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="230" height="330" rx="16" fill="url(#netCardGrad)" stroke="#3B82F6" stroke-width="2" />
+    
+    <text x="115" y="35" fill="#60A5FA" font-family="&#39;Segoe UI&#39;, Roboto, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">NETWORK ID</text>
+    <text x="115" y="55" fill="#93C5FD" font-family="&#39;Segoe UI&#39;, Roboto, sans-serif" font-size="12" text-anchor="middle">1 Octeto (8 Bits)</text>
+
+    <!-- Bit 0 indicator -->
+    <rect x="20" y="85" width="190" height="60" rx="8" fill="#1E293B" stroke="#3B82F6" stroke-width="1" />
+    <text x="35" y="110" fill="#F59E0B" font-family="monospace" font-size="16" font-weight="bold">BIT FIJO: 0</text>
+    <text x="35" y="130" fill="#94A3B8" font-family="&#39;Segoe UI&#39;, Roboto, sans-serif" font-size="11">Define el rango Clase A</text>
+
+    <!-- Router Core Icon -->
+    <g transform="translate(115, 210)">
+      <circle cx="0" cy="0" r="35" fill="#1E3A8A" stroke="#60A5FA" stroke-width="2" filter="url(#neonGlow)" />
+      <path d="M -15 0 L 15 0 M 0 -15 L 0 15 M -10 -10 L 10 10 M -10 10 L 10 -10" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+
+    <text x="115" y="280" fill="#FFFFFF" font-family="&#39;Segoe UI&#39;, Roboto, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Enrutamiento Global</text>
+    <text x="115" y="300" fill="#94A3B8" font-family="&#39;Segoe UI&#39;, Roboto, sans-serif" font-size="11" text-anchor="middle">Identifica la Red Principal</text>
+  </g>
+
+  <!-- RIGHT PANEL: HOST ID INTERNAL HIERARCHY -->
+  <g transform="translate(360, 280)">
+    <rect x="0" y="0" width="740" height="330" rx="16" fill="url(#hostCardGrad)" stroke="#10B981" stroke-width="2" />
+
+    <text x="370" y="35" fill="#34D399" font-family="&#39;Segoe UI&#39;, Roboto, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">HOST ID - SUBREDES Y DISPOSITIVOS INTERNOS</text>
+    <text x="370" y="55" fill="#A7F3D0" font-family="&#39;Segoe UI&#39;, Roboto, sans-serif" font-size="12" text-anchor="middle">3 Octetos (24 Bits) - Espacio Interno Máscara /8</text>
+
+    <!-- INTERNAL TOPOLOGY MAP (Switching & Internal Expansion) -->
+    <!-- Core Switch -->
+    <g transform="translate(370, 110)">
+      <rect x="-60" y="-20" width="120" height="40" rx="6" fill="#065F46" stroke="#34D399" stroke-width="2" />
+      <text x="0" y="5" fill="#FFFFFF" font-family="&#39;Segoe UI&#39;, Roboto, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">CORE SWITCH</text>
+    </g>
+
+    <!-- Connecting Bus Lines -->
+    <path d="M 370 130 L 370 170 M 140 170 L 600 170 M 140 170 L 140 200 M 370 170 L 370 200 M 600 170 L 600 200" stroke="#34D399" stroke-width="2" fill="none" />
+
+    <!-- Sub-Block 1: Subred A -->
+    <g transform="translate(70, 200)">
+      <rect x="0" y="0" width="140" height="100" rx="8" fill="#0F172A" stroke="#059669" stroke-width="1.5" />
+      <text x="70" y="25" fill="#34D399" font-family="&#39;Segoe UI&#39;, Roboto, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Subred 1</text>
+      <!-- Mini devices -->
+      <circle cx="40" cy="55" r="10" fill="#10B981" />
+      <circle cx="70" cy="55" r="10" fill="#10B981" />
+      <circle cx="100" cy="55" r="10" fill="#10B981" />
+      <text x="70" y="85" fill="#94A3B8" font-family="&#39;Segoe UI&#39;, Roboto, sans-serif" font-size="10" text-anchor="middle">Servidores</text>
+    </g>
+
+    <!-- Sub-Block 2: Subred B -->
+    <g transform="translate(300, 200)">
+      <rect x="0" y="0" width="140" height="100" rx="8" fill="#0F172A" stroke="#059669" stroke-width="1.5" />
+      <text x="70" y="25" fill="#34D399" font-family="&#39;Segoe UI&#39;, Roboto, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Subred 2</text>
+      <!-- Mini devices -->
+      <rect x="30" y="45" width="20" height="15" fill="#34D399" />
+      <rect x="60" y="45" width="20" height="15" fill="#34D399" />
+      <rect x="90" y="45" width="20" height="15" fill="#34D399" />
+      <text x="70" y="85" fill="#94A3B8" font-family="&#39;Segoe UI&#39;, Roboto, sans-serif" font-size="10" text-anchor="middle">Estaciones Trabajo</text>
+    </g>
+
+    <!-- Sub-Block 3: Subred C -->
+    <g transform="translate(530, 200)">
+      <rect x="0" y="0" width="140" height="100" rx="8" fill="#0F172A" stroke="#059669" stroke-width="1.5" />
+      <text x="70" y="25" fill="#34D399" font-family="&#39;Segoe UI&#39;, Roboto, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Subred 3</text>
+      <!-- Mini devices -->
+      <path d="M 40 50 L 45 60 L 35 60 Z" fill="#34D399" />
+      <path d="M 70 50 L 75 60 L 65 60 Z" fill="#34D399" />
+      <path d="M 100 50 L 105 60 L 95 60 Z" fill="#34D399" />
+      <text x="70" y="85" fill="#94A3B8" font-family="&#39;Segoe UI&#39;, Roboto, sans-serif" font-size="10" text-anchor="middle">Dispositivos IoT/WiFi</text>
+    </g>
+
+  </g>
+
+  <!-- FLOW ARROW BETWEEN NETWORK AND HOST -->
+  <path d="M 330 445 L 360 445" stroke="#00F2FE" stroke-width="4" fill="none" marker-end="url(#arrow)" />
+
+</svg>
